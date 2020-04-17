@@ -1,0 +1,6 @@
+.messagesWrapper {
+  margin-top: 20px;
+  max-height: calc(100% - 100px);
+  padding: 0 20px;
+  overflow: scroll;
+}

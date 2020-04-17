@@ -1,0 +1,4 @@
+export const CHANGE_ACCOUNT = 'CHANGE_ACCOUNT';
+export const ADD_MESSAGE = 'ADD_MESSAGE';
+export const ONREAD_MESSAGE = 'ONREAD_MESSAGE';
+export const DELETE_TRADE = 'DELETE_TRADE';

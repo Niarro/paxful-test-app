@@ -1,0 +1,24 @@
+.wrapper {
+  margin: 20px 0;
+}
+
+.disclaimer {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.blockWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.blockWrapper > p {
+  margin: 0
+}
+
+.value {
+  text-align: right;
+}

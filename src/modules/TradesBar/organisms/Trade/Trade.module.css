@@ -1,0 +1,76 @@
+@value variables: "~modules/ui/variables.css";
+@value athens-gray, athens-gray-second, catskill-white-color, silver-color, de-york-color from variables;
+
+.trade {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: athens-gray;
+  transition: all 0.2s ease;
+}
+
+.tradeActive {
+  background-color: catskill-white-color;
+}
+
+.trade:hover {
+  cursor: pointer;
+  background-color: athens-gray-second;
+}
+
+.statusWrapper {
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.activeStatus {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: de-york-color;
+}
+
+.notActiveStatus {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: silver-color;
+}
+
+.tradeInfoWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.tradeInfo {
+  padding: 0 2px;
+}
+
+.status {
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+.value {
+  font-size: 14px;
+  margin: 0;
+}
+
+.avatarWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70px;
+}
+
+.avatarIconWrapper {
+  margin-bottom: 7px;
+}

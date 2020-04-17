@@ -1,0 +1,10 @@
+@value variables: "~modules/ui/variables.css";
+@value lg-breakpoint, alto-color from variables;
+
+.headerWrapper {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid alto-color;
+}

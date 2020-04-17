@@ -1,0 +1,81 @@
+@value variables: "~modules/ui/variables.css";
+@value lg-breakpoint, alabaster-color, alto-color, silver-color from variables;
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  max-width: 20%;
+  max-height: 100vh;
+  padding: 20px;
+  background: alabaster-color;
+  border: 1px solid alto-color;
+  box-sizing: border-box;
+  -webkit-box-shadow: 2px 0px 10px -1px rgba(8,19,5,0.75);
+  -moz-box-shadow: 2px 0px 10px -1px rgba(8,19,5,0.75);
+  box-shadow: 2px 0px 10px -1px rgba(8,19,5,0.75);
+  overflow: scroll;
+}
+
+.infoHeaderWrapper {
+  margin-bottom: 25px;
+}
+
+.infoBlockWrapper {
+  display: flex;
+}
+
+.avatarWrapper {
+  margin-bottom: 10px;
+}
+
+.infoBlock {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90px;
+  min-width: 90px;
+  padding: 10px 15px;
+  border-bottom: 1px solid alto-color;
+}
+
+.borderRight {
+  border-right: 1px solid alto-color;
+}
+
+.infoBlockTitle {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tradeNumber {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
+.tradeHash {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: silver-color;
+}
+
+@media (max-width: lg-breakpoint) {
+  .wrapper {
+    max-width: 500px;
+  }
+
+  .infoBlock {
+    padding: 10px 8px;
+  }
+}

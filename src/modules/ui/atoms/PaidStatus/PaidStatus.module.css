@@ -1,0 +1,14 @@
+@value variables: "~modules/ui/variables.css";
+@value silver-color, de-york-color from variables;
+
+.paidStatus {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+  color: silver-color;
+}
+
+.paydSuccessStatus {
+  color: de-york-color;
+}

@@ -1,0 +1,26 @@
+@value variables: "~modules/ui/variables.css";
+@value lg-breakpoint, alabaster-color, alto-color from variables;
+
+.wrapper {
+  flex: 1;
+  max-width: 20%;
+  max-height: 100vh;
+  background: alabaster-color;
+  border: 1px solid alto-color;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 10px -1px rgba(8,19,5,0.75);
+  -moz-box-shadow: 0px 2px 10px -1px rgba(8,19,5,0.75);
+  box-shadow: 0px 2px 10px -1px rgba(8,19,5,0.75);
+  overflow-y: scroll;
+}
+
+.wrapper > a {
+  text-decoration: none;
+  color: #4F4F4F;
+}
+
+@media (max-width: lg-breakpoint) {
+  .wrapper {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,59 @@
+@value variables: "~modules/ui/variables.css";
+@value alto-color, lynch-color, pigeon-post-color from variables;
+
+.avatarWrapper {
+  position: relative;
+  margin-left: 10px;
+}
+
+.avatarWrapper:after {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left:7px solid lynch-color;
+  z-index: 2;
+}
+
+.avatarWrapper:before {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left:7px solid alto-color;
+  z-index: 2;
+}
+
+.messageWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.messageBlock {
+  width: calc(100% - 100px);
+}
+
+.message {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 1px solid alto-color;
+  background-color: lynch-color;
+  color: pigeon-post-color;
+  border-radius: 4px;
+}
+
+.date {
+  font-size: 12px;
+  margin: 10px 0 0 0;
+  text-align: right;
+}

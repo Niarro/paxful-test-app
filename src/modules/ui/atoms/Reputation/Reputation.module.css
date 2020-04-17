@@ -1,0 +1,14 @@
+@value variables: "~modules/ui/variables.css";
+@value de-york-color, hippie-pink from variables;
+
+.positiveValue {
+  font-weight: bold;
+  color: de-york-color;
+  padding: 3px;
+}
+
+.negativeValue {
+  font-weight: bold;
+  color: hippie-pink;
+  padding: 3px;
+}

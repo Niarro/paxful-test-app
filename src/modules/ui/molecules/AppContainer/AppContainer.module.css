@@ -1,0 +1,25 @@
+@value variables: "~modules/ui/variables.css";
+@value roboto-font, whisper-color, emperor-color from variables;
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whisper-color;
+  overflow-x: hidden;
+  color: emperor-color;
+  font-family: roboto-font;
+}
+
+.app {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  font-family: roboto-font;
+}
+
+:global(#root) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

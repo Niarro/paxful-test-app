@@ -1,0 +1,29 @@
+@value variables: "~modules/ui/variables.css";
+@value lg-breakpoint from variables;
+
+.wrapper {
+  flex: 2;
+  position: relative;
+  max-width: 60%;
+  box-sizing: border-box;
+  padding: 20px 20px 50px 20px;
+  overflow: hidden;
+  max-height: 100vh;
+}
+
+.inputWrapper {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  bottom: 20px;
+  z-index: 3;
+}
+
+@media (max-width: lg-breakpoint) {
+  .wrapper {
+    max-width: 100%;
+    padding: 20px 5px 50px 5px;
+  }
+}
